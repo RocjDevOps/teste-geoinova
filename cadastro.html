@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Célio Júnio de Souza</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="description" content="Creative Button Styles  - Modern and subtle styles &amp; effects for buttons" />
+
+    <meta name="keywords" content="button styles, css3, modern, flat button, subtle, effects, hover, web design" />
+
+    <meta name="author" content="Codrops" />
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <script type="text/javascript">
+        function validar() {
+            var nome = formuser.nome.value;
+            var email = formuser.email.value;
+            var nascimento = formuser.nascimento.value;
+            var sexo = formuser.sexo.value;
+
+            if (nome == "") {
+                alert('Preencha o campo Nome.');
+                formuser.nome.focus();
+                return false;
+            }
+
+            if (nascimento == "") {
+                alert('Preencha a data de Nascimento.');
+                formuser.nascimento.focus();
+                return false;
+            }
+
+            if (email == "" || email.indexOf('@') == -1) {
+                alert('Preencha o campo E-mail.');
+                formuser.email.focus();
+                return false;
+            }
+
+            if (sexo == "") {
+                alert('Preencha o campo Sexo.');
+                formuser.sexo.focus();
+                return false;
+            }
+
+            if (confirm("Deseja ser redirecionado para o endpoints Repositorio?")) {
+                window.open('https://geoinova.com.br/teste/repositorio.php');
+
+            }
+            if (confirm("Deseja ser redirecionado para o endpoints Repositorio?")) {
+                window.open('https://geoinova.com.br/teste/cache.php');
+
+            }
+            if (confirm("Deseja ser redirecionado para o endpoints Repositorio?")) {
+                window.open('https://geoinova.com.br/teste/fila.php');
+
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-5">
+                    <h2 class="heading-section">Célio Júnio de Souza</h2>
+                </div>
+            </div>
+
+            <div class="row-gray">Logo</div>
+            <div class="contact-wrap w-100 p-md-5 p-4">
+
+                <h1 class="cad-usu">Cadastrar Usuário</h1>
+                <form name="formuser" action="enviar.php" method="POST">
+                    Nome:<input class="form-control vbc" type="text" name="nome"><br><br> Nascimento:
+                    <input class="form-control vbc" type="text" name="nascimento"><br><br> E-mail:
+                    <input class="form-control vbc" type="text" name="email"><br><br> Sexo:
+                    <input class="form-control vbc" type="text" name="sexo"><br><br>
+
+                    <input class="form-control" type="submit" onclick="return validar()">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
